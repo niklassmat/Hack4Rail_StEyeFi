@@ -19,3 +19,7 @@ This allows for:
 - Cleaner stations 🧼
 - Smarter staff deployment 🚶‍♀️
 - Improved passenger experience 🚆
+
+## 📁 Repository structure
+> The `process_data` folder contains core transformation logic. The script group_master_data.py is meant to group the master_data file by station_id to get the unique stations. The script process_pax_data.py loads and merges sensor data from multiple CSV files, processes timestamps to extract weekday information, and filters data for a specific station. It then calculates average daily passenger counts per weekday and outputs a summary table including upper and lower bounds for anomaly detection.
+> 
