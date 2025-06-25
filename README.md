@@ -22,4 +22,4 @@ This allows for:
 
 ## 📁 Repository structure
 > The `process_data` folder contains core transformation logic. The script group_master_data.py is meant to group the master_data file by station_id to get the unique stations. The script process_pax_data.py loads and merges sensor data from multiple CSV files, processes timestamps to extract weekday information, and filters data for a specific station. It then calculates average daily passenger counts per weekday and outputs a summary table including upper and lower bounds for anomaly detection.
-> 
+The Jupyter Notebook 'Hack4Rail_Detection_Anomalies.ipynb' it encompasses the data that created the "usual" and "unusual" categorization. The code looks at each weekday separately, calculates the average and standard deviation of daily passenger totals, and if a day's total is outside the typical range (mean ± std), it's labeled as "Unusual", otherwise as "Usual". This helps identify days with unexpectedly high or low traffic.> 
